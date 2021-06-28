@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>800</width>
-    <height>150</height>
+    <height>152</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -38,24 +38,8 @@
    <property name="spacing">
     <number>10</number>
    </property>
-   <item row="0" column="0" rowspan="4">
-    <widget class="QListView" name="BankSelect">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>128</width>
-       <height>16777215</height>
-      </size>
-     </property>
-    </widget>
-   </item>
    <item row="0" column="1">
-    <widget class="QLabel" name="GunBank1Label">
+    <widget class="QLabel" name="gunBank1Label">
      <property name="text">
       <string>Gun bank 1</string>
      </property>
@@ -65,7 +49,7 @@
     </widget>
    </item>
    <item row="0" column="2">
-    <widget class="QComboBox" name="GunBank1Select">
+    <widget class="QComboBox" name="gunBank1Combo">
      <property name="enabled">
       <bool>false</bool>
      </property>
@@ -78,7 +62,7 @@
     </widget>
    </item>
    <item row="0" column="3">
-    <widget class="QLabel" name="MissileBank1Label">
+    <widget class="QLabel" name="missileBank1Label">
      <property name="text">
       <string>Missile bank 1</string>
      </property>
@@ -88,7 +72,7 @@
     </widget>
    </item>
    <item row="0" column="4">
-    <widget class="QComboBox" name="MissileBank1Select">
+    <widget class="QComboBox" name="missileBank1Combo">
      <property name="enabled">
       <bool>false</bool>
      </property>
@@ -101,7 +85,7 @@
     </widget>
    </item>
    <item row="0" column="5">
-    <widget class="QSpinBox" name="MissileBank1Ammo">
+    <widget class="QSpinBox" name="missileBank1SpinBox">
      <property name="enabled">
       <bool>false</bool>
      </property>
@@ -114,14 +98,14 @@
     </widget>
    </item>
    <item row="0" column="6">
-    <widget class="QPushButton" name="CloseButton">
+    <widget class="QPushButton" name="closeButton">
      <property name="text">
       <string>Close</string>
      </property>
     </widget>
    </item>
    <item row="1" column="1">
-    <widget class="QLabel" name="GunBank2Label">
+    <widget class="QLabel" name="gunBank2Label">
      <property name="text">
       <string>Gun bank 2</string>
      </property>
@@ -131,7 +115,7 @@
     </widget>
    </item>
    <item row="1" column="2">
-    <widget class="QComboBox" name="GunBank2Select">
+    <widget class="QComboBox" name="gunBank2Combo">
      <property name="enabled">
       <bool>false</bool>
      </property>
@@ -144,7 +128,7 @@
     </widget>
    </item>
    <item row="1" column="3">
-    <widget class="QLabel" name="MissileBank2Label">
+    <widget class="QLabel" name="missileBank2Label">
      <property name="text">
       <string>Missile bank 2</string>
      </property>
@@ -154,7 +138,7 @@
     </widget>
    </item>
    <item row="1" column="4">
-    <widget class="QComboBox" name="MissileBank2Select">
+    <widget class="QComboBox" name="missileBank2Combo">
      <property name="enabled">
       <bool>false</bool>
      </property>
@@ -167,7 +151,7 @@
     </widget>
    </item>
    <item row="1" column="5">
-    <widget class="QSpinBox" name="MissileBank2Ammo">
+    <widget class="QSpinBox" name="missileBank2SpinBox">
      <property name="enabled">
       <bool>false</bool>
      </property>
@@ -180,7 +164,7 @@
     </widget>
    </item>
    <item row="2" column="1">
-    <widget class="QLabel" name="GunBank3Label">
+    <widget class="QLabel" name="gunBank3Label">
      <property name="text">
       <string>Gun bank 3</string>
      </property>
@@ -190,7 +174,7 @@
     </widget>
    </item>
    <item row="2" column="2">
-    <widget class="QComboBox" name="GunBank3Select">
+    <widget class="QComboBox" name="gunBank3Combo">
      <property name="enabled">
       <bool>false</bool>
      </property>
@@ -203,7 +187,7 @@
     </widget>
    </item>
    <item row="2" column="3">
-    <widget class="QLabel" name="MissileBank3Label">
+    <widget class="QLabel" name="missileBank3Label">
      <property name="text">
       <string>Missile bank 3</string>
      </property>
@@ -213,7 +197,7 @@
     </widget>
    </item>
    <item row="2" column="4">
-    <widget class="QComboBox" name="MissileBank3Select">
+    <widget class="QComboBox" name="missileBank3Combo">
      <property name="enabled">
       <bool>false</bool>
      </property>
@@ -226,7 +210,7 @@
     </widget>
    </item>
    <item row="2" column="5">
-    <widget class="QSpinBox" name="MissileBank3Ammo">
+    <widget class="QSpinBox" name="missileBank3SpinBox">
      <property name="enabled">
       <bool>false</bool>
      </property>
@@ -239,7 +223,7 @@
     </widget>
    </item>
    <item row="3" column="1">
-    <widget class="QLabel" name="AIClassLabel">
+    <widget class="QLabel" name="aiClassLabel">
      <property name="text">
       <string>AI class</string>
      </property>
@@ -249,7 +233,7 @@
     </widget>
    </item>
    <item row="3" column="2">
-    <widget class="QComboBox" name="GunBank4Select">
+    <widget class="QComboBox" name="aiClassCombo">
      <property name="sizePolicy">
       <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
        <horstretch>0</horstretch>
@@ -262,7 +246,7 @@
     </widget>
    </item>
    <item row="3" column="3">
-    <widget class="QLabel" name="MissileBank4Label">
+    <widget class="QLabel" name="missileBank4Label">
      <property name="text">
       <string>Missile bank 4</string>
      </property>
@@ -272,7 +256,7 @@
     </widget>
    </item>
    <item row="3" column="4">
-    <widget class="QComboBox" name="MissileBank4Select">
+    <widget class="QComboBox" name="missileBank4Combo">
      <property name="enabled">
       <bool>false</bool>
      </property>
@@ -285,7 +269,7 @@
     </widget>
    </item>
    <item row="3" column="5">
-    <widget class="QSpinBox" name="MissileBank4Ammo">
+    <widget class="QSpinBox" name="missileBank4SpinBox">
      <property name="enabled">
       <bool>false</bool>
      </property>
@@ -294,6 +278,22 @@
        <horstretch>0</horstretch>
        <verstretch>0</verstretch>
       </sizepolicy>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" rowspan="4">
+    <widget class="QListWidget" name="weaponSelect">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>128</width>
+       <height>16777215</height>
+      </size>
      </property>
     </widget>
    </item>
