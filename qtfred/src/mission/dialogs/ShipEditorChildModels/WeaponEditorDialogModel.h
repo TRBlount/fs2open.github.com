@@ -19,32 +19,32 @@ class WeaponEditorDialogModel : public AbstractDialogModel {
 	bool _modified = false;
 
 	int _m_cur_item;
-	int _m_ai_class;
-	int _m_ammo1;
-	int _m_ammo2;
-	int _m_ammo3;
-	int _m_ammo4;
-	int _m_gun1;
-	int _m_gun2;
-	int _m_gun3;
-	int _m_missile1;
-	int _m_missile2;
-	int _m_missile3;
-	int _m_missile4;
+
+	SCP_vector<SCP_string> _m_names;
+	SCP_vector<ship_weapon> _m_weapons;
 
 	void set_modified();
 
 	bool update_weapons(int);
 	bool update_data();
 
+	void update_ammo(int bank);
+
   public:
-	WeaponEditorDialogModel(QObject* parent, EditorViewport* viewport);
+	WeaponEditorDialogModel(QObject* parent, EditorViewport* viewport, int multi_edit);
 
 	bool apply() override;
 	void reject() override;
 
-	void setCurrItem(int);
-	int getCurrItem();
+	void setCurItem(int);
+	int getCurItem();
+
+	SCP_string getName(int idx);
+	ship_weapon* getCurWeapon();
+
+	int getNumWeapons();
+	int getNumPrimaries();
+	int getNumSecondaries();
 
 	void setGunBank1(int);
 	int getGunBank1();
@@ -82,7 +82,7 @@ class WeaponEditorDialogModel : public AbstractDialogModel {
 	int ship;
 	int ship_class;
 	int multi_edit;
-	ship_weapon pilot, *cur_weapon;
+	int big;
 };
 
 template <typename T>

@@ -683,7 +683,7 @@ void ShipEditorDialog::on_resetButton_clicked() { _model->OnShipReset(); }
 void ShipEditorDialog::on_deleteButton_clicked() { _model->OnDeleteShip(); }
 void ShipEditorDialog::on_weaponsButton_clicked()
 {
-	WeaponEditorDialog dialog(this, _viewport);
+	WeaponEditorDialog dialog(this, _viewport, _model->multi_edit);
 	dialog.exec();
 }
 void ShipEditorDialog::on_playerOrdersButton_clicked()

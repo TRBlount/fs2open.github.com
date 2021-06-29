@@ -23,7 +23,7 @@ class WeaponEditorDialog : public QDialog {
 	Q_OBJECT
 
   public:
-	WeaponEditorDialog(QWidget* parent, EditorViewport* viewport);
+	WeaponEditorDialog(QWidget* parent, EditorViewport* viewport, int m_multi_edit);
 	~WeaponEditorDialog() override;
 
   protected:
@@ -34,12 +34,9 @@ class WeaponEditorDialog : public QDialog {
 	std::unique_ptr<WeaponEditorDialogModel> _model;
 	EditorViewport* _viewport;
 
-	void initDialog();
-
 	void updateUI();
-	void update_pilot();
 
-	void weaponSelectChanged(int);
+	void weaponSelectChanged(QListWidgetItem*, QListWidgetItem*);
 
 	void gunBank1Changed(int);
 	void gunBank2Changed(int);
@@ -55,18 +52,6 @@ class WeaponEditorDialog : public QDialog {
 	void missileAmmo2Changed(int);
 	void missileAmmo3Changed(int);
 	void missileAmmo4Changed(int);
-};
-
-class SWP_ListWidgetItem : public QListWidgetItem {
-  public:
-	SWP_ListWidgetItem(QListWidget* parent = nullptr);
-	SWP_ListWidgetItem(const QString& text, QListWidget* parent = nullptr);
-
-	ship_weapon* getUserData() const;
-	void setUserData(ship_weapon* data);
-
-  private:
-	ship_weapon* userData;
 };
 
 } // namespace dialogs

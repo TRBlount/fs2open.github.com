@@ -125,7 +125,6 @@ add_file_folder("Source/UI/Widgets"
     src/ui/widgets/renderwidget.h
 	src/ui/widgets/sexp_tree.cpp
 	src/ui/widgets/sexp_tree.h
-	src/ui/widgets/SCP_ListWidgetItem.h
 )
 
 add_file_folder("UI"
