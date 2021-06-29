@@ -8,6 +8,8 @@
 #include <globalincs/linklist.h>
 #include <ui/util/SignalBlockers.h>
 
+#include "ShipEditorChildDlgs/WeaponEditorDialog.h"
+
 #include <QCloseEvent>
 
 namespace fso {
@@ -681,7 +683,8 @@ void ShipEditorDialog::on_resetButton_clicked() { _model->OnShipReset(); }
 void ShipEditorDialog::on_deleteButton_clicked() { _model->OnDeleteShip(); }
 void ShipEditorDialog::on_weaponsButton_clicked()
 {
-	// TODO: weapons dialog
+	WeaponEditorDialog dialog(this, _viewport);
+	dialog.exec();
 }
 void ShipEditorDialog::on_playerOrdersButton_clicked()
 {

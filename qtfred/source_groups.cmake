@@ -61,8 +61,8 @@ add_file_folder("Source/Mission/Dialogs"
 	src/mission/dialogs/WaypointEditorDialogModel.h
 	src/mission/dialogs/ShipEditorDialogModel.h
 	src/mission/dialogs/ShipEditorDialogModel.cpp
-	src/mission/dialogs/ShipEditorChildModels/ShipEditWeaponDialogModel.h
-	src/mission/dialogs/ShipEditorChildModels/ShipEditWeaponDialogModel.cpp
+	src/mission/dialogs/ShipEditorChildModels/WeaponEditorDialogModel.h
+	src/mission/dialogs/ShipEditorChildModels/WeaponEditorDialogModel.cpp
 )
 
 add_file_folder("Source/UI"
@@ -107,8 +107,8 @@ add_file_folder("Source/UI/Dialogs"
 	src/ui/dialogs/WaypointEditorDialog.h
 	src/ui/dialogs/ShipEditorDialog.h
 	src/ui/dialogs/ShipEditorDialog.cpp
-	src/ui/dialogs/ShipEditorChildDlgs/ShipEditWeaponDialog.h
-	src/ui/dialogs/ShipEditorChildDlgs/ShipEditWeaponDialog.cpp
+	src/ui/dialogs/ShipEditorChildDlgs/WeaponEditorDialog.h
+	src/ui/dialogs/ShipEditorChildDlgs/WeaponEditorDialog.cpp
 )
 
 add_file_folder("Source/UI/Util"
@@ -147,7 +147,7 @@ add_file_folder("UI"
 	ui/VoiceActingManager.ui
     ui/WaypointEditorDialog.ui
 	ui/ShipEditorDialog.ui
-	ui/ShipEditorChildUI/ShipEditWeaponDialog.ui
+	ui/ShipEditorChildUI/WeaponEditorDialog.ui
 )
 
 add_file_folder("Resources"

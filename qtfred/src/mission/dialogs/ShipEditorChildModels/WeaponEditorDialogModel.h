@@ -9,7 +9,7 @@ namespace fso {
 namespace fred {
 namespace dialogs {
 
-class ShipEditWeaponDialogModel : public AbstractDialogModel {
+class WeaponEditorDialogModel : public AbstractDialogModel {
   private:
 	void initializeData();
 
@@ -34,8 +34,11 @@ class ShipEditWeaponDialogModel : public AbstractDialogModel {
 
 	void set_modified();
 
+	bool update_weapons(int);
+	bool update_data();
+
   public:
-	ShipEditWeaponDialogModel(QObject* parent, EditorViewport* viewport);
+	WeaponEditorDialogModel(QObject* parent, EditorViewport* viewport);
 
 	bool apply() override;
 	void reject() override;
@@ -83,7 +86,7 @@ class ShipEditWeaponDialogModel : public AbstractDialogModel {
 };
 
 template <typename T>
-inline void ShipEditWeaponDialogModel::modify(T& a, const T& b)
+inline void WeaponEditorDialogModel::modify(T& a, const T& b)
 {
 	if (a != b) {
 		a = b;
